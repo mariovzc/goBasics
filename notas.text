@@ -1,0 +1,3 @@
+las funciones publicas van con mayuscula y las privadas con minuscula
+
+los packages son una forma de agrupar codigo fuente, por ejemplo el paquete fmt contiene funciones para formateo, puedes pensar el los packages como librerias y namespace al mismo tiempo, contienen funcionalidad y sirven para evitar colisiones de nombrado de variables
