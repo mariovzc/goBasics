@@ -3,35 +3,42 @@ package main
 import (
 	"fmt"
 
-	"./name"
+	"./maps"
+	//"./name"
 )
 
 const helloWorld = "Hola %s %s, bienvenido al mundo de GO. \n"
 
 func main() {
 
-	// solo se utiliza para inizializar variables
-	lastname := "Vzc"
+	/*
+		// solo se utiliza para inizializar variables
+		lastname := "Vzc"
 
-	//var number = 100
-	//var (
-	//	a = 10
-	//	b = 20
-	//	c = 30
-	//)
+		//var number = 100
+		//var (
+		//	a = 10
+		//	b = 20
+		//	c = 30
+		//)
 
-	a, b, c := getVariables()
+		a, b, c := getVariables()
 
-	firstName := name.GetName()
+		firstName := name.GetName()
 
-	f32, f64 := getFloat()
+		f32, f64 := getFloat()
 
-	fmt.Printf(helloWorld, firstName, lastname)
+		fmt.Printf(helloWorld, firstName, lastname)
 
-	fmt.Println(a, b, c)
+		fmt.Println(a, b, c)
 
-	fmt.Println(f32)
-	fmt.Println(f64)
+		fmt.Println(f32)
+		fmt.Println(f64)*/
+
+	fmt.Println(maps.GetMap("yohan"))
+
+	nombre := "platzi"
+	fmt.Println("Hola %s", nombre)
 }
 
 func getVariables() (int, int, int) {
