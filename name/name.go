@@ -13,3 +13,8 @@ func GetName() string {
 
 	return name
 }
+
+// GetUnicode retorna un string
+func GetUnicode() string {
+	return "もしもし!"
+}
