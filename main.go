@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"./name"
+)
 
 const helloWorld = "Hola %s %s, bienvenido al mundo de GO. \n"
 
@@ -10,7 +14,6 @@ func main() {
 	lastname := "Vzc"
 
 	//var number = 100
-	number := sum(50, 50)
 	//var (
 	//	a = 10
 	//	b = 20
@@ -19,26 +22,16 @@ func main() {
 
 	a, b, c := getVariables()
 
+	firstName := name.GetName()
+
 	f32, f64 := getFloat()
 
-	name := getName()
+	fmt.Printf(helloWorld, firstName, lastname)
 
-	fmt.Printf(helloWorld, name, lastname)
-
-	fmt.Println(a, b, c, number)
+	fmt.Println(a, b, c)
 
 	fmt.Println(f32)
 	fmt.Println(f64)
-}
-
-func getName() string {
-	var name string
-	name = "sin nombre"
-
-	fmt.Println("Ingresa tu nombre")
-	fmt.Scanf("%s", &name)
-
-	return name
 }
 
 func getVariables() (int, int, int) {
